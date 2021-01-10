@@ -17,15 +17,15 @@ function sendMessage (message) {
   document.querySelector("button._2Ujuu").click();
 }
 
-var message = prompt("Digite a mensagem que deseja enviar:", "Salve!");
-if (menssage == null || menssage == "") {
+var message = prompt("Type the message you want to send:", "Hello!");
+if (message == null || message == "") {
   txt = "User cancelled the prompt.";
 } else {
-  var count = parseInt(prompt("Quantas vezes deseja enviar a mensagem? (Cuidado, números exorbitantes podem travar seu computador)", "100"));
+  var count = parseInt(prompt("How many times do you want to send it? (Be careful)", "100"));
   for (let i = 0; i < count; i++) { 
   	let randomPeriod = getRandomPeriod();
-  	setTimeout(function () {
-    	this.sendMessage(message)
-    }, randomPeriod);
+		setTimeout(function () {
+			this.sendMessage(message)
+		}, randomPeriod);
 	}
 }
