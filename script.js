@@ -14,7 +14,7 @@ function sendMessage (message) {
   textbox.innerHTML = message;
   textbox.dispatchEvent(event);
 
-  document.querySelector("button._2Ujuu").click();
+  document.querySelector("button._1E0Oz").click();
 }
 
 var message = prompt("Type the message you want to send:", "Hello!");
