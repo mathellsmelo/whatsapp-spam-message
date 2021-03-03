@@ -9,7 +9,7 @@ function sendMessage (message) {
     bubbles: true
   });
 
-  var textbox = document.getElementsByClassName("_1awRl copyable-text selectable-text")[1];
+  var textbox = document.getElementsByClassName("_2_1wd copyable-text selectable-text")[1];
 
   textbox.innerHTML = message;
   textbox.dispatchEvent(event);
